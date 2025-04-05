@@ -3,7 +3,7 @@ let boxServ = document.querySelector(".box-serv")
 let descServ = document.querySelector(".desc-serv")
 const servicesData = [
     {
-    id: 1, 
+    id: 1,
     images: "images/ecommerce.png",
     title: 'e-Commerce',
     categroy: "eCommerce",
@@ -80,29 +80,29 @@ const servicesData = [
   },
 ]
 
-let html = "";
-servicesData.find(items => {
-  let html = `
-    <div class="col-6 col-sm-4 active">
-    <div class="service-img" data-tab=${items.categroy}>
-    <img src=${items.images} class="img-fluid" alt="Not Found">
-    </div>
-    </div>
-  `
-  boxServ.innerHTML += html;
-})
+// let html = "";
+// servicesData.find(items => {
+//   let html = `
+//     <div class="col-6 col-sm-4 active">
+//     <div class="service-img" data-tab=${items.categroy}>
+//     <img src=${items.images} class="img-fluid" alt="Not Found">
+//     </div>
+//     </div>
+//   `
+//   boxServ.innerHTML += html;
+// })
 
-servicesData.find(items => {
-  let html = `
-    <div class="service-details ${items.categroy}">
-      <h3 class="mb-3">${items.title}</h3>
-      <p class="mb-2">${items.desc[0]}</p>
-      <a href="services.html?title=${title = items.title.split(" ", 2).join("/")}"class="btn btn-primary mt-4">view details</a>
-    </div>
-  `
-  descServ.innerHTML += html;
-  document.querySelectorAll(".service-details")[0].classList.add("active")
-})
+// servicesData.find(items => {
+//   let html = `
+//     <div class="service-details ${items.categroy}">
+//       <h3 class="mb-3">${items.title}</h3>
+//       <p class="mb-2">${items.desc[0]}</p>
+//       <a href="services.html?title=${title = items.title.split(" ", 2).join("/")}"class="btn btn-primary mt-4">view details</a>
+//     </div>
+//   `
+//   descServ.innerHTML += html;
+//   document.querySelectorAll(".service-details")[0].classList.add("active")
+// })
 
 // ! ================== tab services ==================
 let serviceImg = document.querySelectorAll(".service-img");
