@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bluezone</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <!-- Libraries Css files -->
     <link rel="stylesheet" href="css/libs/animate.min.css" />
     <link rel="stylesheet" href="css/libs/all.min.css" />
@@ -14,106 +13,178 @@
     <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <!-- _____ up _____ -->
     <div class="up">
-        <span class="lnr lnr-chevron-up"></span>
+      <span class="lnr lnr-chevron-up"></span>
     </div>
 
     <!--================ Start mobile site =================-->
     <div class="site-mobile">
-        <div class="mobile-close"><span>×</span></div>
-        <ul class="mt-5">
-            <li><a href="index.html" class="active">home</a></li>
-            <li><a href="about.html">about us</a></li>
+      <div class="mobile-close"><span>×</span></div>
+      <ul class="mt-5">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li>
+          <a href="#" class="position-relative active">
+            services
+            <i class="fa-solid fa-angle-down down"></i>
+          </a>
+          <ul class="dropdown">
+            <li><a href="services.html">web design</a></li>
+            <li><a href="services.html">E-Marketing</a></li>
             <li>
-                <a href="#" class="position-relative active">
-                    services
-                    <i class="fa-solid fa-angle-down down"></i>
-                </a>
-                <ul class="dropdown">
-                    <li><a href="services.html?title=Web/Design">web design</a></li>
-                    <li><a href="services.html?title=Marketing">E-Marketing</a></li>
-                    <li>
-                        <a href="services.html?title=Application">Application</a>
-                    </li>
-                    <li>
-                        <a href="services.html?title=Technical/Supported">Technical support 24/7</a>
-                    </li>
-                    <li>
-                        <a href="services.html?title=Web/Hosting">Website hosting</a>
-                    </li>
-                </ul>
+              <a href="services.html">Application</a>
+            </li>
+            <li>
+              <a href="services.html">Technical support 24/7</a>
+            </li>
+            <li>
+              <a href="services.html">Website hosting</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="careers.html">careers</a></li>
+        <a href="contact.html" class="btn btn-primary">Contact</a>
+      </ul>
+    </div>
+    <!--================ end mobile site =================-->
+
+    <!--================ Start Header Area =================-->
+    <header class="header-area">
+      <div class="container position-relative">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="index.html">
+            <img src="images/logo.png" alt="bluezone logo" class="logo" />
+          </a>
+          <!-- bars -->
+          <div class="bars d-lg-none">
+            <span></span><span></span><span></span>
+          </div>
+          <ul class="navigation position-relative d-none d-lg-flex">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li class="position-relative">
+              <a href="#" class="active">services</a>
+              <ul class="dropdown">
+                <li><a href="services.html">web design</a></li>
+                <li><a href="services.html">E-Marketing</a></li>
+                <li>
+                  <a href="services.html">Application</a>
+                </li>
+                <li>
+                  <a href="services.html">Technical support 24/7</a>
+                </li>
+                <li>
+                  <a href="services.html">Website hosting</a>
+                </li>
+              </ul>
             </li>
             <li><a href="projects.html">projects</a></li>
             <li><a href="careers.html">careers</a></li>
-            <a href="contact.html" class="btn btn-primary">Contact</a>
-        </ul>
-    </div>
-    <!--================ end mobile site =================-->
-    <!--================ Start Header Area =================-->
-    <header class="header-area">
-        <div class="container position-relative">
-            <div class="d-flex align-items-center justify-content-between">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="bluezone logo" class="logo" />
-                </a>
-                <!-- bars -->
-                <div class="bars d-lg-none">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul class="navigation position-relative d-none d-lg-flex">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about us</a></li>
-                    <li class="position-relative">
-                        <a href="#" class="active">services</a>
-                        <ul class="dropdown">
-                            <li><a href="services.html?title=Web/Design">web design</a></li>
-                            <li><a href="services.html?title=Marketing">E-Marketing</a></li>
-                            <li>
-                                <a href="services.html?title=Application">Application</a>
-                            </li>
-                            <li>
-                                <a href="services.html?title=Technical/Supported">Technical support 24/7</a>
-                            </li>
-                            <li>
-                                <a href="services.html?title=Web/Hosting">Website hosting</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="careers.html">careers</a></li>
-                    <a href="contact.html" class="btn btn-primary ms-3">Contact</a>
-                </ul>
-            </div>
+            <a href="contact.html" class="btn btn-primary ms-3">Contact</a>
+          </ul>
         </div>
+      </div>
     </header>
     <!--================ end Header Area =================-->
+
     <!--================ Start hero-wrap =================-->
     <section class="hero-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 mx-auto text-center wow fadeIn">
-                    <h2 class="text-white">SERVICES</h2>
-                    <p class="breadcrumbs text-white mt-2">
-                        <span class="mr-2"><a href="index.html" class="text-white">Home <i class="fa-solid fa-angle-right mx-2"></i> </a></span>
-                        <span>Services</span>
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mx-auto text-center wow fadeIn">
+            <h2 class="text-white">SERVICES</h2>
+            <p class="breadcrumbs text-white mt-2">
+              <span class="mr-2"
+                ><a href="index.html" class="text-white"
+                  >Home <i class="fa-solid fa-angle-right mx-2"></i> </a
+              ></span>
+              <span>Services</span>
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!--================ end hero-wrap =================-->
     <!--================ Start services =================-->
     <section class="section services">
-        <div class="container">
-            <div class="row align-items-center serv-inner">
+      <div class="container">
+        <div class="row align-items-center serv-inner">
+          <div
+            class="col-lg-12 text-center wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <img
+              src="images/services01.jpg"
+              class="img-fluid"
+              alt="Not Found"
+            />
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="subtitle wow fadeInUp" data-wow-delay="200ms">
+                Web design and development services at bluezone
+              </h3>
+              <p class="wow fadeInUp" data-wow-delay="250ms">
+                At Bluezone, we offer innovative and visually captivating web
+                design and development services that transform your ideas into
+                fully functional, high-performance websites. We provide
+                comprehensive digital solutions that help establish a strong
+                online presence while ensuring a seamless user experience and an
+                appealing, professional design.
+              </p>
+              <p class="mt-3 mb-4 wow fadeInUp" data-wow-delay="300ms">
+                we don’t just create websites we design complete digital
+                experiences that help you achieve your business goals. Our focus
+                is on delivering results through stunning designs and superior
+                performance. Whether you need a simple landing page or a complex
+                e-commerce platform, we have the expertise to bring your vision
+                to life.
+              </p>
+              <h3 class="subtitle wow fadeInUp" data-wow-delay="350ms">
+                Why choose bluezone for your web Design needs?
+              </h3>
+              <ul
+                class="list-unstyled options wow fadeInUp"
+                data-wow-delay="400ms"
+              >
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Custom website design
+                  for businesses and individuals.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Interactive and
+                  dynamic website development.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> SEO-optimized
+                  websites to improve search engine visibility.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> UX/UI design to
+                  enhance user interaction.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> E-commerce website
+                  development for online stores.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Blog and personal
+                  website design.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Redesign and
+                  modernization of outdated websites.
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--================ end services =================-->
     <!--================ start footer =================-->
@@ -181,16 +252,21 @@
             <ul class="address">
               <li class="text-white d-flex">
                 <i class="fa-solid fa-location-dot"></i>
-                <a href="https://maps.app.goo.gl/bYQV6njjF8f38uA29" target="_blank">
-                    <p class="ms-2">
-                    Kuwait - Hawalli - Block 3 - Ibn Khaldoun Street - Al-Dakhim Building - Floor 3
+                <a
+                  href="https://maps.app.goo.gl/bYQV6njjF8f38uA29"
+                  target="_blank"
+                >
+                  <p class="ms-2">
+                    Kuwait - Hawalli - Block 3 - Ibn Khaldoun Street - Al-Dakhim
+                    Building - Floor 3
                   </p>
                 </a>
               </li>
 
               <li class="d-flex">
                 <a href="tel:+96597244282"
-                  ><i class="fa-solid fa-phone-volume me-1"></i> +965 9724 4282</a
+                  ><i class="fa-solid fa-phone-volume me-1"></i> +965 9724
+                  4282</a
                 >
               </li>
 
@@ -204,12 +280,19 @@
           </div>
         </div>
         <div class="row">
-        <div class="col-lg-6 mb-lg-0 mt-5 text-center mx-auto">
-          <p class="copy-right text-white">
-            Copyright <span class="year"></span> All rights reserved | Design & Developed By
-            <a href="https://www.bluezonekw.com/" target="_blank" style="display: inline-block" title="Kareem Reda">Bluezone</a>
-          </p>
-        </div>
+          <div class="col-lg-6 mb-lg-0 mt-5 text-center mx-auto">
+            <p class="copy-right text-white">
+              Copyright <span class="year"></span> All rights reserved | Design
+              & Developed By
+              <a
+                href="https://www.bluezonekw.com/"
+                target="_blank"
+                style="display: inline-block"
+                title="Kareem Reda"
+                >Bluezone</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </footer>
@@ -220,7 +303,5 @@
     <script src="js/libs/wow.min.js"></script>
     <!-- Libraries Js files -->
     <script src="js/main.js"></script>
-    <script src="js/services.js"></script>
-</body>
-
+  </body>
 </html>
