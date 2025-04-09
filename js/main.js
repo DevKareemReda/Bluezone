@@ -4,6 +4,8 @@ $(()=> {
     cursorcolor: "var(--primary01)", // change cursor color in hex
     cursorwidth: "5px", // cursor width in pixel (you can also write "5px")
     cursorborder: ".1px solid var(--primary02)", // css definition for cursor border
+    scrollspeed: 40,
+    mousescrollstep: 20,
     cursorborderradius: "5px", // border radius in pixel for cursor
     zindex: "999", // change z-index for scrollbar div
   });

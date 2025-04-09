@@ -30,3 +30,7 @@ function stopVideo() {
     videoPlayer.pause();
     videoPlayer.currentTime = 0;
 }
+
+window.onload = function() {
+    stopVideo()
+  };
