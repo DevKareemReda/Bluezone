@@ -8,14 +8,16 @@
     <!-- Libraries Css files -->
     <link rel="stylesheet" href="css/libs/animate.min.css" />
     <link rel="stylesheet" href="css/libs/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/overlayscrollbars/css/OverlayScrollbars.min.css" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="css/libs/linearicon.min.css" />
     <!-- bootstrap ''grid'' files -->
     <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body>
+  <body id="simple-bar">
     <!-- _____ up _____ -->
     <div class="up">
       <span class="lnr lnr-chevron-up"></span>
@@ -28,7 +30,7 @@
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about us</a></li>
         <li>
-          <a href="#" class="position-relative active">
+          <a href="#" class="position-relative">
             services
             <i class="fa-solid fa-angle-down down"></i>
           </a>
@@ -39,7 +41,9 @@
               <a href="services.html">Application</a>
             </li>
             <li>
-              <a href="services.html">Technical support 24/7</a>
+              <a href="services.html"
+                >Technical support 24/7</a
+              >
             </li>
             <li>
               <a href="services.html">Website hosting</a>
@@ -47,7 +51,7 @@
           </ul>
         </li>
         <li><a href="projects.html">projects</a></li>
-        <li><a href="blog.html">blog</a></li>
+        <li><a href="blog.html" class="active">blog</a></li>
         <li><a href="careers.html">careers</a></li>
         <a href="contact.html" class="btn btn-primary">Contact</a>
       </ul>
@@ -69,7 +73,7 @@
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about us</a></li>
             <li class="position-relative">
-              <a href="#" class="active">services</a>
+              <a href="#">services</a>
               <ul class="dropdown">
                 <li><a href="services.html">web design</a></li>
                 <li><a href="services.html">E-Marketing</a></li>
@@ -77,7 +81,9 @@
                   <a href="services.html">Application</a>
                 </li>
                 <li>
-                  <a href="services.html">Technical support 24/7</a>
+                  <a href="services.html"
+                    >Technical support 24/7</a
+                  >
                 </li>
                 <li>
                   <a href="services.html">Website hosting</a>
@@ -85,7 +91,7 @@
               </ul>
             </li>
             <li><a href="projects.html">projects</a></li>
-            <li><a href="blog.html">blog</a></li>
+            <li><a href="blog.html" class="active">blog</a></li>
             <li><a href="careers.html">careers</a></li>
             <a href="contact.html" class="btn btn-primary ms-3">Contact</a>
           </ul>
@@ -94,101 +100,165 @@
     </header>
     <!--================ end Header Area =================-->
 
+
     <!--================ Start hero-wrap =================-->
     <section class="hero-wrap">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 mx-auto text-center wow fadeIn">
-            <h2 class="text-white">SERVICES</h2>
+        <div class="row wow fadeIn">
+          <div class="col-md-5 mx-auto text-center">
+            <h2 class="text-white">BLOG</h2>
             <p class="breadcrumbs text-white mt-2">
               <span class="mr-2"
                 ><a href="index.html" class="text-white"
                   >Home <i class="fa-solid fa-angle-right mx-2"></i> </a
               ></span>
-              <span>Services</span>
+              <span>Blog</span>
             </p>
           </div>
         </div>
       </div>
     </section>
     <!--================ end hero-wrap =================-->
-    <!--================ Start services =================-->
-    <section class="section services">
+
+
+    <!--================ start blog =================-->
+    <section class="section blog">
       <div class="container">
-        <div class="row align-items-center serv-inner">
-          <div
-            class="col-lg-12 text-center wow fadeInUp"
-            data-wow-delay="100ms"
-          >
-            <img
-              src="images/services01.jpg"
-              class="img-fluid"
-              alt="Not Found"
-            />
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <h3 class="subtitle wow fadeInUp" data-wow-delay="200ms">
-                Web design and development services at bluezone
-              </h3>
-              <p class="wow fadeInUp" data-wow-delay="250ms">
-                At Bluezone, we offer innovative and visually captivating web
-                design and development services that transform your ideas into
-                fully functional, high-performance websites. We provide
-                comprehensive digital solutions that help establish a strong
-                online presence while ensuring a seamless user experience and an
-                appealing, professional design.
+        <div class="row">
+          <div class="tab-hidden one active col-md-6 mb-5 mb-md-0">
+            <div class="blog-items">
+              <div class="position-relative">
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-5.jpg" alt="" class="img-fluid">
+                <div class="notify-items">
+                  <a href="#" class="notify">web design</a>
+                </div>
+              </div>
+                <span class="mt-3 mb-1"><i class="fa-solid fa-calendar-days me-1"></i> Saturday, 06 January 2023</span>
+                <h2 class="my-3">
+                  <a href="blog-details.html">
+                    How to Design a Professional Website
+                  </a>
+                </h2>
+              <p class="mt-2">
+                In this article, we explore the key steps and tips to help you build an attractive and user-friendly website that improves user experience and conversion...
               </p>
-              <p class="mt-3 mb-4 wow fadeInUp" data-wow-delay="300ms">
-                we don’t just create websites we design complete digital
-                experiences that help you achieve your business goals. Our focus
-                is on delivering results through stunning designs and superior
-                performance. Whether you need a simple landing page or a complex
-                e-commerce platform, we have the expertise to bring your vision
-                to life.
-              </p>
-              <h3 class="subtitle wow fadeInUp" data-wow-delay="350ms">
-                Why choose bluezone for your web Design needs?
-              </h3>
-              <ul
-                class="list-unstyled options wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Custom website design
-                  for businesses and individuals.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Interactive and
-                  dynamic website development.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> SEO-optimized
-                  websites to improve search engine visibility.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> UX/UI design to
-                  enhance user interaction.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> E-commerce website
-                  development for online stores.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Blog and personal
-                  website design.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Redesign and
-                  modernization of outdated websites.
-                </li>
-              </ul>
+              <a href="blog-details.html" class="btn btn-primary mt-4">Read More</a>
             </div>
           </div>
+          <div class="tab-hidden one active col-md-6">
+            <div class="blog-items">
+              <div class="position-relative">
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-4.jpg" alt="" class="img-fluid">
+              <div class="notify-items">
+                <a href="#" class="notify">app design</a>
+              </div>
+              </div>
+                <span class="mt-3 mb-1"><i class="fa-solid fa-calendar-days me-1"></i> Saturday, 06 January 2023</span>
+                <h2 class="my-3">
+                  <a href="blog-details.html">
+                    Top 5 Tips for Successful Mobile App Development
+                  </a>
+                </h2>
+              <p class="mt-2">
+                Mobile apps are a major part of our lives. In this article, we share 5 essential tips every developer should consider when building high-performing apps...
+              </p>
+              <a href="blog-details.html" class="btn btn-primary mt-4">Read More</a>
+            </div>
+          </div>
+          <div class="tab-hidden two active col-md-6 mt-5">
+            <div class="blog-items">
+              <div class="position-relative">
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-1.jpg" alt="" class="img-fluid">
+
+
+              <div class="notify-items">
+                <a href="#" class="notify">Marketing</a>
+              </div>
+              </div>
+                <span class="mt-3 mb-1"><i class="fa-solid fa-calendar-days me-1"></i> Saturday, 06 January 2023</span>
+                <h2 class="my-3">
+                  <a href="blog-details.html">
+                    What is Digital Marketing & Why Your Business Needs It
+                  </a>
+                </h2>
+              <p class="mt-2">
+                Digital marketing is essential for every business today. In this post, we'll explain its importance, main types, and how to create a successful marketing plan...
+              </p>
+              <a href="blog-details.html" class="btn btn-primary mt-4">Read More</a>
+            </div>
+          </div>
+          <div class="tab-hidden one active col-md-6 mt-5">
+            <div class="blog-items">
+              <div class="position-relative">
+
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-2.jpg" alt="" class="img-fluid">
+
+              <div class="notify-items">
+                <a href="#" class="notify">eCommerce</a>
+              </div>
+              </div>
+                <span class="mt-3 mb-1"><i class="fa-solid fa-calendar-days me-1"></i> Saturday, 06 January 2023</span>
+                <h2 class="my-3">
+                  <a href="blog-details.html">
+                    The Future of E-commerce in the Middle East
+                  </a>
+                </h2>
+              <p class="mt-2">
+                E-commerce in the Middle East is growing rapidly. We analyze trends, challenges, and opportunities for businesses in the region...
+              </p>
+              <a href="blog-details.html" class="btn btn-primary mt-4">Read More</a>
+            </div>
+          </div>
+          <div class="tab-hidden two col-md-6 mt-5">
+            <div class="blog-items">
+              <div class="position-relative">
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-2.jpg" alt="" class="img-fluid">
+
+                <div class="notify-items">
+                  <a href="#" class="notify">SEO</a>
+                </div>
+              </div>
+                <span class="mt-3 mb-1"><i class="fa-solid fa-calendar-days me-1"></i> Saturday, 06 January 2023</span>
+                <h2 class="my-3">
+                  <a href="blog-details.html">
+                    Beginner's Guide to SEO in 2025                  </a>
+                </h2>
+              <p class="mt-2">
+                SEO is still a powerful tool in 2025. Learn how to optimize your website step by step, even if you're just getting started...
+              </p>
+              <a href="blog-details.html" class="btn btn-primary mt-4">Read More</a>
+            </div>
+          </div>
+          <div class="tab-hidden one col-md-6 mt-5">
+            <div class="blog-items">
+              <div class="position-relative">
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-7.jpg" alt="" class="img-fluid">
+
+                <div class="notify-items">
+                  <a href="#" class="notify me-2">web design</a>
+                  <a href="#" class="notify">app design</a>
+                </div>
+              </div>
+                <span class="mt-3 mb-1"><i class="fa-solid fa-calendar-days me-1"></i> Saturday, 06 January 2023</span>
+                <h2 class="my-3">
+                  <a href="blog-details.html">
+                    Why Every Business Needs a Mobile-Responsive Website</a>
+                </h2>
+              <p class="mt-2">
+                More than 70% of users access the web via smartphones. Discover how responsive design boosts performance and user satisfaction...              </p>
+              <a href="blog-details.html" class="btn btn-primary mt-4">Read More</a>
+            </div>
+          </div>
+          <ul class="pagination d-flex justify-content-center ">
+            <li data-id="one" class="active">1</li>
+            <li data-id="two">2</li>
+          </ul>
         </div>
       </div>
     </section>
-    <!--================ end services =================-->
+    <!--================ end blog =================-->
+
+
     <!--================ start footer =================-->
     <footer class="section footer-area">
       <div class="container">
@@ -303,7 +373,9 @@
     <script src="js/libs/jquery-3.7.1.min.js"></script>
     <script src="js/libs/jquery.nicescroll.min.js"></script>
     <script src="js/libs/wow.min.js"></script>
-    <!-- Libraries Js files -->
+
+    <!-- Main Js file -->
     <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
   </body>
 </html>

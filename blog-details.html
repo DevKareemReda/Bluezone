@@ -8,14 +8,16 @@
     <!-- Libraries Css files -->
     <link rel="stylesheet" href="css/libs/animate.min.css" />
     <link rel="stylesheet" href="css/libs/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/overlayscrollbars/css/OverlayScrollbars.min.css" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="css/libs/linearicon.min.css" />
     <!-- bootstrap ''grid'' files -->
     <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body>
+  <body id="simple-bar">
     <!-- _____ up _____ -->
     <div class="up">
       <span class="lnr lnr-chevron-up"></span>
@@ -28,7 +30,7 @@
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about us</a></li>
         <li>
-          <a href="#" class="position-relative active">
+          <a href="#" class="position-relative">
             services
             <i class="fa-solid fa-angle-down down"></i>
           </a>
@@ -39,7 +41,9 @@
               <a href="services.html">Application</a>
             </li>
             <li>
-              <a href="services.html">Technical support 24/7</a>
+              <a href="services.html"
+                >Technical support 24/7</a
+              >
             </li>
             <li>
               <a href="services.html">Website hosting</a>
@@ -47,7 +51,7 @@
           </ul>
         </li>
         <li><a href="projects.html">projects</a></li>
-        <li><a href="blog.html">blog</a></li>
+        <li><a href="blog.html" class="active">blog</a></li>
         <li><a href="careers.html">careers</a></li>
         <a href="contact.html" class="btn btn-primary">Contact</a>
       </ul>
@@ -69,7 +73,7 @@
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about us</a></li>
             <li class="position-relative">
-              <a href="#" class="active">services</a>
+              <a href="#">services</a>
               <ul class="dropdown">
                 <li><a href="services.html">web design</a></li>
                 <li><a href="services.html">E-Marketing</a></li>
@@ -77,7 +81,9 @@
                   <a href="services.html">Application</a>
                 </li>
                 <li>
-                  <a href="services.html">Technical support 24/7</a>
+                  <a href="services.html"
+                    >Technical support 24/7</a
+                  >
                 </li>
                 <li>
                   <a href="services.html">Website hosting</a>
@@ -85,7 +91,7 @@
               </ul>
             </li>
             <li><a href="projects.html">projects</a></li>
-            <li><a href="blog.html">blog</a></li>
+            <li><a href="blog.html" class="active">blog</a></li>
             <li><a href="careers.html">careers</a></li>
             <a href="contact.html" class="btn btn-primary ms-3">Contact</a>
           </ul>
@@ -94,101 +100,104 @@
     </header>
     <!--================ end Header Area =================-->
 
+
     <!--================ Start hero-wrap =================-->
     <section class="hero-wrap">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 mx-auto text-center wow fadeIn">
-            <h2 class="text-white">SERVICES</h2>
+        <div class="row wow fadeIn">
+          <div class="col-md-5 mx-auto text-center">
+            <h2 class="text-white">BLOG</h2>
             <p class="breadcrumbs text-white mt-2">
               <span class="mr-2"
                 ><a href="index.html" class="text-white"
                   >Home <i class="fa-solid fa-angle-right mx-2"></i> </a
               ></span>
-              <span>Services</span>
+              <span class="mr-2"
+                ><a href="blog.html" class="text-white"
+                  >Blog <i class="fa-solid fa-angle-right mx-2"></i> </a
+              ></span>
+              <span>Design a Professional Website</span>
             </p>
           </div>
         </div>
       </div>
     </section>
     <!--================ end hero-wrap =================-->
-    <!--================ Start services =================-->
-    <section class="section services">
+
+    <section class="section blog">
       <div class="container">
-        <div class="row align-items-center serv-inner">
-          <div
-            class="col-lg-12 text-center wow fadeInUp"
-            data-wow-delay="100ms"
-          >
-            <img
-              src="images/services01.jpg"
-              class="img-fluid"
-              alt="Not Found"
-            />
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <h3 class="subtitle wow fadeInUp" data-wow-delay="200ms">
-                Web design and development services at bluezone
-              </h3>
-              <p class="wow fadeInUp" data-wow-delay="250ms">
-                At Bluezone, we offer innovative and visually captivating web
-                design and development services that transform your ideas into
-                fully functional, high-performance websites. We provide
-                comprehensive digital solutions that help establish a strong
-                online presence while ensuring a seamless user experience and an
-                appealing, professional design.
-              </p>
-              <p class="mt-3 mb-4 wow fadeInUp" data-wow-delay="300ms">
-                we don’t just create websites we design complete digital
-                experiences that help you achieve your business goals. Our focus
-                is on delivering results through stunning designs and superior
-                performance. Whether you need a simple landing page or a complex
-                e-commerce platform, we have the expertise to bring your vision
-                to life.
-              </p>
-              <h3 class="subtitle wow fadeInUp" data-wow-delay="350ms">
-                Why choose bluezone for your web Design needs?
-              </h3>
-              <ul
-                class="list-unstyled options wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Custom website design
-                  for businesses and individuals.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Interactive and
-                  dynamic website development.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> SEO-optimized
-                  websites to improve search engine visibility.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> UX/UI design to
-                  enhance user interaction.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> E-commerce website
-                  development for online stores.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Blog and personal
-                  website design.
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Redesign and
-                  modernization of outdated websites.
-                </li>
-              </ul>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+
+            <div class="blog-items">
+              <div class="position-relative">
+                <img src="https://webency.themejunction.net/wp-content/uploads/2024/03/blog-img-5.jpg" alt="" class="img-fluid">
+                <div class="notify-items">
+                  <a href="#" class="notify">web design</a>
+                </div>
+              </div>
+              <div class="my-5">
+                <h2 class="my-3">How to Design a Professional Website: A Complete Guide</h2>
+                <p>
+                  In today's digital world, having a professional website is essential for any business or personal brand. A well-designed website not only attracts visitors but also builds trust, improves user experience, and increases conversions. In this article, we'll guide you through the key steps to design a successful and modern website from start to finish.
+                </p>
+
+                <h2 class="my-3">1. Define Your Purpose and Target Audience</h2>
+                <p class="text-gray-700 mb-6">
+                  Before you start designing, you need to be clear about your website's goal. Are you building a portfolio, an online store, or a blog? Understanding your purpose helps you plan the layout, features, and content. Also, identify your target audience—what do they expect from your website? What kind of content or experience will attract and keep them?
+                </p>
+
+                <h2 class="my-3">2. Plan the Structure and Layout</h2>
+                <p class="text-gray-700 mb-6">
+                  Organizing your content with a clear structure is key to good user experience. Use a sitemap to define the main pages such as Home, About, Services, Blog, and Contact. Sketch wireframes to visualize how content will be laid out on each page. Make sure navigation is simple and intuitive.
+                </p>
+
+                <h2 class="my-3">3. Choose a Clean and Consistent Design</h2>
+                <p class="text-gray-700 mb-6">
+                  Design consistency builds trust. Use a limited color palette that fits your brand, select 1–2 fonts, and keep spacing uniform. Make sure buttons, links, and headings have consistent styles throughout the site. A clean design with plenty of white space makes content easier to read and improves focus.
+                </p>
+
+                <h2 class="my-3">4. Optimize for Mobile Devices</h2>
+                <p class="text-gray-700 mb-6">
+                  More than half of website traffic comes from mobile devices. Ensure your website is fully responsive, meaning it looks great and functions smoothly on phones and tablets. Test your design on different screen sizes to fix any layout issues or overlapping elements.
+                </p>
+
+                <h2 class="my-3">5. Use High-Quality Images and Graphics</h2>
+                <p class="text-gray-700 mb-6">
+                  Visuals play a big role in web design. Use professional images, icons, and graphics that reflect your brand. Avoid blurry or outdated pictures. Tools like Unsplash or Freepik offer great free resources. Also, make sure images are optimized for fast loading without losing quality.
+                </p>
+
+                <h2 class="my-3">6. Focus on Usability and Accessibility</h2>
+                <p class="text-gray-700 mb-6">
+                  A beautiful design is useless if users can't navigate it. Use clear CTAs (Call to Actions), readable font sizes, and descriptive buttons. Make your site accessible to everyone, including people with disabilities. Use proper contrast, alt text for images, and semantic HTML for better accessibility and SEO.
+                </p>
+
+                <h2 class="my-3">7. Add Engaging and Relevant Content</h2>
+                <p class="text-gray-700 mb-6">
+                  Good design goes hand in hand with good content. Write clear, valuable, and engaging content that answers users’ questions. Use headings, bullet points, and visuals to break up text. A blog section is a great way to add fresh content regularly and improve your SEO.
+                </p>
+
+                <h2 class="my-3">8. Test and Get Feedback</h2>
+                <p class="text-gray-700 mb-6">
+                  Before launching, test your website on different browsers and devices. Fix broken links, typos, and loading issues. Ask friends or colleagues to navigate the site and give honest feedback. Use tools like Google PageSpeed Insights to measure performance and fix any issues.
+                </p>
+
+                <h2 class="my-3">9. Keep Improving After Launch</h2>
+                <p class="text-gray-700 mb-6">
+                  Launching your website is just the beginning. Monitor how users interact with it using tools like Google Analytics or Hotjar. Keep updating your content, improving performance, and staying up to date with web design trends. A website is a living product—it should evolve with your goals and audience.
+                </p>
+
+                <p class="text-lg text-gray-700 mt-8">
+                  Designing a professional website takes time, creativity, and attention to detail. But with the right plan and tools, you can build a site that not only looks great but also delivers real value to your visitors.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--================ end services =================-->
+
+
     <!--================ start footer =================-->
     <footer class="section footer-area">
       <div class="container">
@@ -303,7 +312,8 @@
     <script src="js/libs/jquery-3.7.1.min.js"></script>
     <script src="js/libs/jquery.nicescroll.min.js"></script>
     <script src="js/libs/wow.min.js"></script>
-    <!-- Libraries Js files -->
+
+    <!-- Main Js file -->
     <script src="js/main.js"></script>
   </body>
 </html>
