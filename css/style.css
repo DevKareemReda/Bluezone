@@ -1,7 +1,5 @@
 /* _____ Import files _____ */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* _____ style all rules _____ */
 :root {
@@ -122,7 +120,7 @@ span {
 
 @media screen and (max-width: 576px) {
   .main-title h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
 
@@ -146,9 +144,8 @@ span {
 }
 
 .hero-wrap {
-  background:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-      url(../images/hero-wrap.jpeg) center /cover fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../images/hero-wrap.jpeg) center / cover fixed;
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -172,7 +169,7 @@ span {
   color: #fff;
   line-height: 44px;
   cursor: pointer;
-  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px 0 #00000085;
   border-radius: 25px;
   z-index: 12;
   transform: translateY(-200px);
@@ -180,12 +177,63 @@ span {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s linear;
+  font-size: 13px;
+  font-weight: bold;
 }
 .up.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
+a.whats {
+  background: #0ba98f;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 4px 10px 0 #00000085;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 5;
+}
+
+a.whats::before {
+  content: attr(data-msg);
+  position: absolute;
+  top: 0;
+  left: 140%;
+  bottom: 0;
+  background-color: #212529;
+  border-radius: 5px;
+  color: #fff;
+  width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+a.whats::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-right-color: #212529;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+a.whats:hover::before,
+a.whats:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* _____ start style header area _____ */
 .header-area {
   position: absolute;
@@ -197,37 +245,37 @@ span {
 
 @media screen and (min-width: 992px) {
   .header-area .container {
-      border-radius: 4px;
-      left: 0;
-      right: 0;
-      padding: 10px 15px;
-      background-color: #fff;
+    border-radius: 4px;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: #fff;
   }
 }
 
 @media screen and (max-width: 991px) {
   .header-area {
-      top: 0;
-      border-radius: 0;
-      left: 0;
-      right: 0;
-      padding: 10px 15px;
-      background-color: #fff;
+    top: 0;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: #fff;
   }
 }
 
 @media screen and (max-width: 576px) {
   .header-area {
-      top: 0;
-      border-radius: 0;
-      background: #fff !important;
+    top: 0;
+    border-radius: 0;
+    background: #fff !important;
   }
 }
 
 .header-area.scrolled {
   margin-top: -130px;
   padding: 0;
-  transition: .3s all ease-out;
+  transition: 0.3s all ease-out;
 }
 
 .header-area.sticky {
@@ -246,7 +294,7 @@ span {
 
 @media screen and (max-width: 768px) {
   .header-area .logo {
-      max-width: 60px;
+    max-width: 60px;
   }
 }
 
@@ -294,7 +342,7 @@ span {
   transition: all 0.3s ease-in-out;
 }
 
-.header-area .navigation li:hover>a,
+.header-area .navigation li:hover > a,
 .header-area .navigation li a.active,
 .site-mobile ul li a:hover,
 .site-mobile ul li a.active {
@@ -324,6 +372,10 @@ span {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.header-area .navigation .btn {
+  padding: 13px 30px !important; /* edit */
 }
 
 /* _____ end style header area _____ */
@@ -397,7 +449,7 @@ span {
   overflow: hidden;
 }
 
-.site-mobile ul li.active>ul {
+.site-mobile ul li.active > ul {
   transform: scaleY(1);
   max-height: 172px;
   overflow: visible;
@@ -418,7 +470,7 @@ span {
   width: fit-content;
 }
 
-.site-mobile ul li.active>a {
+.site-mobile ul li.active > a {
   color: var(--primary01);
 }
 
@@ -428,7 +480,8 @@ span {
 .hero-section {
   padding-top: 9rem;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(5, 0, 0, 0.6)), url(../images/landing-page.webp) fixed center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(5, 0, 0, 0.6)),
+    url(../images/landing-page.webp) fixed center / cover;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -440,11 +493,11 @@ span {
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: .7s linear;
+  transition: 0.7s linear;
 }
 .modal-video.active {
   opacity: 1;
@@ -472,10 +525,12 @@ video {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
+  line-height: 1.4; /* edit */
 }
 
-.hero-section p {
+.hero-section .hero-desc p {
   color: #ccc;
+  text-align: justify; /* edit */
 }
 
 .hero-section .hero-desc a.btn-video {
@@ -495,23 +550,19 @@ video {
 
 @keyframes shadowThrob {
   0% {
-      box-shadow:
-          0 0 0 0 rgba(255, 255, 255, 0.03),
-          0 0 0 10px rgba(255, 255, 255, 0.03),
-          0 0 0 20px rgba(255, 255, 255, 0.09);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.03),
+      0 0 0 10px rgba(255, 255, 255, 0.03), 0 0 0 20px rgba(255, 255, 255, 0.09);
   }
 
   100% {
-      box-shadow:
-          0 0 0 10px rgba(255, 255, 255, 0.03),
-          0 0 0 20px rgba(255, 255, 255, 0.09),
-          0 0 0 30px rgba(255, 255, 255, 0)
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.03),
+      0 0 0 20px rgba(255, 255, 255, 0.09), 0 0 0 30px rgba(255, 255, 255, 0);
   }
 }
 
 @media screen and (max-width: 992px) {
   .hero-section .hero-desc h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -551,11 +602,11 @@ video {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -582,7 +633,7 @@ video {
 
 @media screen and (max-width: 576px) {
   .about h2 {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -725,7 +776,7 @@ video {
 
 @media screen and (max-width: 576px) {
   .counter-section {
-      padding: 30px 0;
+    padding: 30px 0;
   }
 }
 
@@ -854,8 +905,6 @@ footer.footer-area p.copy a {
 
 /* _____ start style footer-area _____ */
 
-
-
 /* _____ start style about-us page _____ */
 .about-us {
   background: url(../images/blob01.png) center / contain fixed;
@@ -922,7 +971,6 @@ footer.footer-area p.copy a {
 
 /* _____ end style about-us page _____ */
 
-
 /* _____ start style service page _____ */
 .service {
   background: var(--primary03);
@@ -975,14 +1023,13 @@ footer.footer-area p.copy a {
   color: #fff !important;
 }
 
-
 /* _____ start style careers page _____ */
 select {
   appearance: none;
   position: relative;
 }
 
-select+.fa-angle-down {
+select + .fa-angle-down {
   position: absolute;
   top: 20px;
   right: 25px;
@@ -1004,7 +1051,6 @@ select+.fa-angle-down {
   width: 100%;
   padding-left: 40px;
   height: 49px !important;
-
 }
 
 .forms label::before {
@@ -1022,10 +1068,9 @@ select+.fa-angle-down {
 }
 
 @keyframes width {
-
   50%,
   100% {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -1099,7 +1144,7 @@ input[type="file"] {
 }
 
 .blog .blog-items p {
-  color: #787878
+  color: #787878;
 }
 
 .blog .blog-items img {
@@ -1129,3 +1174,163 @@ input[type="file"] {
   color: #fff;
 }
 /* _____ end style blog page _____ */
+
+/* start style arabic language */
+@font-face {
+  font-family: "TheSans-Regular";
+  src: url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-Regular_TRIAL.woff2")
+      format("woff2"),
+    url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-Regular_TRIAL.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TheSans-Bold";
+  src: url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-Bold_TRIAL.woff2")
+      format("woff2"),
+    url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-Bold_TRIAL.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TheSans-Italic";
+  src: url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-Italic_TRIAL.woff2")
+      format("woff2"),
+    url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-Italic_TRIAL.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TheSans-BoldItalic";
+  src: url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-BoldItalic_TRIAL.woff2")
+      format("woff2"),
+    url("https://bluezonekw.com/front/fonts/thesans/TheSansOffice-BoldItalic_TRIAL.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+[dir="rtl"] body {
+  font-family: "TheSans", sans-serif;
+}
+[dir="rtl"] .site-mobile {
+  right: -100% !important;
+}
+
+[dir="rtl"] .site-mobile.active {
+  right: 0 !important;
+}
+
+[dir="rtl"] .mobile-close {
+  position: absolute;
+  right: auto;
+  left: 20px !important;
+  top: 0;
+  cursor: pointer;
+}
+
+[dir="rtl"] .site-mobile ul li a .down {
+  left: 0 !important;
+  right: auto;
+}
+
+[dir="rtl"] .me-3 {
+  margin-left: 1rem !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .ms-3 {
+  margin-left: 0 !important;
+  margin-right: 1rem !important;
+}
+
+[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .hero-section .hero-desc a.btn-video {
+  margin-right: 16px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .btn-primary::before {
+  transform-origin: right !important;
+  right: 0 !important;
+  left: auto;
+}
+
+[dir="rtl"] .ms-2 {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+
+[dir="rtl"] .me-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .according-head .fa-angle-down {
+  right: auto;
+  left: 15px !important;
+}
+
+[dir="rtl"] .according-head svg {
+  margin-right: 0;
+  margin-left: 10px !important;
+}
+
+[dir="rtl"] select + .fa-angle-down {
+  right: auto;
+  left: 25px !important;
+}
+
+[dir="rtl"] .forms form .errorInp {
+  color: #f00;
+  margin-bottom: 15px;
+  display: none;
+  font-size: 12px;
+  font-family: "poppins", sans-serif;
+}
+
+[dir="rtl"] .forms label::before {
+  left: auto;
+  right: 0 !important;
+}
+
+[dir="rtl"] .forms-connect i {
+  margin-right: 0;
+  margin-left: 30px !important;
+}
+
+[dir="rtl"] .up {
+  bottom: 20px;
+  right: auto;
+  left: 20px !important;
+}
+[dir="rtl"] a.whats {
+  left: auto;
+  right: 20px !important;
+}
+[dir="rtl"] a.whats::after {
+  left: -40%;
+  border-left-color: #212529;
+}
+
+[dir="rtl"] a.whats::before {
+  right: 140% !important;
+}
+
+[dir="rtl"] a.whats::after {
+  left: -40% !important;
+  border-right-color: transparent !important;
+  border-left-color: #212529 !important;
+}
+
+
+/* end style arabic language */
