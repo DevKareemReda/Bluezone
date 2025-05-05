@@ -152,6 +152,11 @@ span {
   justify-content: center;
 }
 
+.project-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+      url(https://www.bluezonekw.com/uploads/settings/1745757623680e25b7aa205.jpg) center / cover fixed;
+}
+
 .hero-wrap h2 {
   font-size: 30px;
 }
@@ -378,6 +383,17 @@ a.whats:hover::after {
   padding: 13px 30px !important; /* edit */
 }
 
+a.lang {
+  font-size: 15px;
+  margin: 10px 15px;
+  color: #000;
+}
+a.lang img {
+  width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    margin-right: 5px;
+}
 /* _____ end style header area _____ */
 
 /* _____ style site mobile _____ */
@@ -480,8 +496,8 @@ a.whats:hover::after {
 .hero-section {
   padding-top: 9rem;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(5, 0, 0, 0.6)),
-    url(../images/landing-page.webp) fixed center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../images/landing-page.jpg) fixed center / cover;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -512,7 +528,7 @@ a.whats:hover::after {
   cursor: pointer;
 }
 
-video {
+.modal-video video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -522,15 +538,15 @@ video {
 }
 
 .hero-section .hero-desc h3 {
-  font-size: 40px;
+  font-size: 31px;
   font-weight: 700;
   color: #fff;
-  line-height: 1.4; /* edit */
+  line-height: 1.4;
 }
 
 .hero-section .hero-desc p {
   color: #ccc;
-  text-align: justify; /* edit */
+  text-align: justify;
 }
 
 .hero-section .hero-desc a.btn-video {
@@ -546,6 +562,10 @@ video {
   box-shadow: 0;
   color: var(--primary01);
   animation: shadowThrob 1s linear infinite;
+}
+
+.hero-section img {
+  transform: translateY(2px);
 }
 
 @keyframes shadowThrob {
@@ -942,7 +962,7 @@ footer.footer-area p.copy a {
 .according-head .fa-angle-down {
   float: right;
   font-size: 14px;
-  margin: 6px 0;
+  margin: 9px 2px;
   transition: 0.3s linear;
   position: absolute;
   right: 15px;
@@ -1175,6 +1195,111 @@ input[type="file"] {
 }
 /* _____ end style blog page _____ */
 
+/* start style arabic package */
+
+.pricing-card {
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+[dir="rtl"] .features {text-align: right;}
+.pricing-card h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #1e1e1e;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 13px;
+  background-color: #f3e8ff;
+  color: #7c3aed;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+}
+
+.save-text {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 26px;
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+.price-big {
+  font-size: 36px;
+}
+
+.price-small {
+  font-size: 16px;
+  color: #555;
+}
+
+.term {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.free-months {
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.choose-btn {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.choose-btn:hover {
+  background-color: #5b21b6;
+}
+
+.renew-note {
+  font-size: 11px;
+  color: #999;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.features li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* end style arabic package */
 /* start style arabic language */
 @font-face {
   font-family: "TheSans-Regular";
@@ -1332,5 +1457,9 @@ input[type="file"] {
   border-left-color: #212529 !important;
 }
 
+[dir="rtl"] a.lang img {
+  margin-right: 0;
+  margin-left: 5px;
+}
 
 /* end style arabic language */

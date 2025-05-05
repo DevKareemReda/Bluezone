@@ -1,12 +1,4 @@
 $(()=> {
-  $("body").niceScroll({
-    cursorcolor: "var(--primary01)",
-    cursorwidth: "5px",
-    scrollspeed: 150,
-    cursorborderradius: "5px",
-    zindex: "999",
-    horizrailenabled: false,
-  });
   new WOW().init();
 })
 
