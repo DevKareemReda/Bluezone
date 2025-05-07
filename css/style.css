@@ -145,7 +145,7 @@ span {
 
 .hero-wrap {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(../images/hero-wrap.jpeg) center / cover fixed;
+  url(../images/landing-page.jpg) center / cover fixed;
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -383,12 +383,12 @@ a.whats:hover::after {
   padding: 13px 30px !important; /* edit */
 }
 
-a.lang {
+.lang {
   font-size: 15px;
   margin: 10px 15px;
   color: #000;
 }
-a.lang img {
+.lang img {
   width: 20px;
     border-radius: 50%;
     height: 20px;
